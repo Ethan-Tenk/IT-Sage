@@ -6,6 +6,9 @@
     <title>HTML5 Cheatsheet</title>
     <meta name="description" content="HTML5 Cheatsheet covering essential elements and attributes.">
     <meta name="author" content="Ethan Lang"/>
+    <style>
+        input, label, textarea{display:block}
+    </style>
    
 </head>
 <body>
@@ -74,13 +77,44 @@
     <h2>Hyperlinks</h2>
     <ul>
         <li><a href="https://ualr.edu" target="_blank">Absolute Link</a></li>
-        <li><a href="../index.html">Relative Link</a></li> <!---The ../index.html will take me up a level--->-->
+        <li><a href="../index.html">Relative Link</a></li> <!---The ../index.html will take me up a level--->
         <li><a href="#top">Anchor Link</a></li>
         <li><a href="mailto:email@email.com">Email Link</a></li>
     </ul>
 </section>
+<section id="table">
+    <h2>Tables</h2>
+    <table border="1"> 
+        <caption>Grocery List</caption>
+        <tr> 
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Cost</th></tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+        
+        
+            </tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>
 
-
+            <!-- Remove border once we get to Css -->
+    </table>
+</section>
+<section id="forms">
+    <form action="processing-script.php" method="get">
+<fieldset>
+    <legend>Sample Form Elements</legend>
+    <lable>Full Name:</lable><input type="text" id="fullname" name="fullname"/>
+  <lable for="address">Address:</lable>
+<textarea id="address" name="address"></textarea>
+</fieldset>
+</section>   
 
 
 
